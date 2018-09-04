@@ -11,7 +11,7 @@ module Ryo
         def fetch_body
           res = Client.http.get(endpoint)
           csrftoken = res.cookies.find { |c| c.name == "csrftoken" }.value
-          params = { csrfmiddlewaretoken: csrftoken, targetip: domain.fld }
+          params = { csrfmiddlewaretoken: csrftoken, targetip: fld }
 
           res = Client.http.cookies(csrftoken: csrftoken).headers(referer: endpoint).post(endpoint, form: params)
           res.body.to_s

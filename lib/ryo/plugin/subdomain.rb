@@ -7,10 +7,10 @@ require_relative "subdomain/find_subdomains"
 module Ryo
   module Plugin
     module Subdomain
-      def self.discover(domain)
+      def self.discover(fld)
         subdomains = []
-        subdomains << DNSDumpster.discover(domain)
-        subdomains << FindSubDomains.discover(domain)
+        subdomains << DNSDumpster.discover(fld)
+        subdomains << FindSubDomains.discover(fld)
         subdomains.flatten.uniq.sort_by { |e| e[:domain] }
       end
     end

@@ -7,26 +7,26 @@ http_interactions:
       encoding: UTF-8
       string: ''
     headers:
+      User-Agent:
+      - WhatWeb/0.3.0
       Connection:
       - close
       Host:
       - www.webscantest.com
-      User-Agent:
-      - http.rb/3.3.0
   response:
     status:
       code: 200
       message: OK
     headers:
       Date:
-      - Sun, 02 Sep 2018 06:51:16 GMT
+      - Tue, 04 Sep 2018 13:31:44 GMT
       Server:
       - Apache/2.4.7 (Ubuntu)
       X-Powered-By:
       - PHP/5.5.9-1ubuntu4.25
       Set-Cookie:
-      - NB_SRVID=srv301408; path=/
-      - TEST_SESSIONID=5shgbi8pqac44t17in33079sv6; path=/
+      - NB_SRVID=srv301409; path=/
+      - TEST_SESSIONID=j0drhu4uag01bck93mf34pb555; path=/
       Expires:
       - Thu, 19 Nov 1981 08:52:00 GMT
       Cache-Control:
@@ -107,5 +107,5 @@ http_interactions:
         style=\"height:10%; vertical-align:top\">\n\t\t\t\t\t\t\t<td align=\"center\"><a
         href=\"/privacy.php\"><font color=\"#FFFFFF\">Privacy Policy</font></a></td>\n\t\t\t\t\t\t</tr>\n\n\t\t\t\t\t</table>\n\t\t\t\t</td>\n\t\t\t</tr>\n\t\t</table>\n\t</body>\n</html>"
     http_version: 
-  recorded_at: Sun, 02 Sep 2018 06:51:16 GMT
+  recorded_at: Tue, 04 Sep 2018 13:31:44 GMT
 recorded_with: VCR 4.0.0

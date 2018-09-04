@@ -20,9 +20,9 @@ http_interactions:
       message: OK
     headers:
       Server:
-      - nginx/1.10.3 (Ubuntu)
+      - nginx
       Date:
-      - Sun, 02 Sep 2018 06:49:22 GMT
+      - Tue, 04 Sep 2018 13:31:41 GMT
       Content-Type:
       - text/html; charset=utf-8
       Transfer-Encoding:
@@ -35,7 +35,7 @@ http_interactions:
       - ALLOW-FROM https://api.hackertarget.com/
       - SAMEORIGIN
       Set-Cookie:
-      - csrftoken=l4bUTR0F5oOtpoFWvw70cWnhhGlksha5; expires=Sun, 01-Sep-2019 06:49:22
+      - csrftoken=PYIjmH5ENilMrjrsdDgVIiJtbqkdBV5P; expires=Tue, 03-Sep-2019 13:31:41
         GMT; Max-Age=31449600; Path=/
       Access-Control-Allow-Origin:
       - "*"
@@ -78,7 +78,7 @@ http_interactions:
         class=\"cover-heading\" style=\"margin-top: 100px;\">dns recon & research,
         find & lookup dns records</h1>\n<p class=\"lead\">\n<div id=\"hideform\">\n<form
         role=\"form\" action=\".\" method=\"post\"><input type='hidden' name='csrfmiddlewaretoken'
-        value='l4bUTR0F5oOtpoFWvw70cWnhhGlksha5' />\n  <div class=\"form-group\">\n<div
+        value='PYIjmH5ENilMrjrsdDgVIiJtbqkdBV5P' />\n  <div class=\"form-group\">\n<div
         class=\"col-md-2\"></div><div class=\"col-md-6\">\n<input class=\"form-control\"
         type=\"text\" placeholder=\"exampledomain.com\" name=\"targetip\" id=\"regularInput\">\n</div></div>\n<div
         align=\"left\" id=\"formsubmit\"><button type=\"submit\" class=\"btn btn-default\">Search
@@ -219,13 +219,13 @@ http_interactions:
         \ ga('create', 'UA-2487671-6', 'auto');\n  ga('send', 'pageview');\n\n</script>\n
         \ </body>\n</html>\n"
     http_version: 
-  recorded_at: Sun, 02 Sep 2018 06:49:22 GMT
+  recorded_at: Tue, 04 Sep 2018 13:31:41 GMT
 - request:
     method: post
     uri: https://dnsdumpster.com/
     body:
       encoding: UTF-8
-      string: csrfmiddlewaretoken=l4bUTR0F5oOtpoFWvw70cWnhhGlksha5&targetip=non_existing_domain.com
+      string: csrfmiddlewaretoken=PYIjmH5ENilMrjrsdDgVIiJtbqkdBV5P&targetip=non_existing_domain.com
     headers:
       User-Agent:
       - Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like
@@ -235,7 +235,7 @@ http_interactions:
       Connection:
       - close
       Cookie:
-      - csrftoken=l4bUTR0F5oOtpoFWvw70cWnhhGlksha5
+      - csrftoken=PYIjmH5ENilMrjrsdDgVIiJtbqkdBV5P
       Content-Type:
       - application/x-www-form-urlencoded
       Host:
@@ -246,9 +246,9 @@ http_interactions:
       message: OK
     headers:
       Server:
-      - nginx/1.10.3 (Ubuntu)
+      - nginx
       Date:
-      - Sun, 02 Sep 2018 06:49:23 GMT
+      - Tue, 04 Sep 2018 13:31:42 GMT
       Content-Type:
       - text/html; charset=utf-8
       Transfer-Encoding:
@@ -261,7 +261,7 @@ http_interactions:
       - ALLOW-FROM https://api.hackertarget.com/
       - SAMEORIGIN
       Set-Cookie:
-      - csrftoken=l4bUTR0F5oOtpoFWvw70cWnhhGlksha5; expires=Sun, 01-Sep-2019 06:49:23
+      - csrftoken=PYIjmH5ENilMrjrsdDgVIiJtbqkdBV5P; expires=Tue, 03-Sep-2019 13:31:42
         GMT; Max-Age=31449600; Path=/
       Access-Control-Allow-Origin:
       - "*"
@@ -304,7 +304,7 @@ http_interactions:
         class=\"cover-heading\" style=\"margin-top: 100px;\">dns recon & research,
         find & lookup dns records</h1>\n<p class=\"lead\">\n<div id=\"hideform\">\n<form
         role=\"form\" action=\".\" method=\"post\"><input type='hidden' name='csrfmiddlewaretoken'
-        value='l4bUTR0F5oOtpoFWvw70cWnhhGlksha5' />\n  <div class=\"form-group\">\n<div
+        value='PYIjmH5ENilMrjrsdDgVIiJtbqkdBV5P' />\n  <div class=\"form-group\">\n<div
         class=\"col-md-2\"></div><div class=\"col-md-6\">\n<input class=\"form-control\"
         type=\"text\" placeholder=\"exampledomain.com\" name=\"targetip\" id=\"regularInput\">\n</div></div>\n<div
         align=\"left\" id=\"formsubmit\"><button type=\"submit\" class=\"btn btn-default\">Search
@@ -448,5 +448,5 @@ http_interactions:
         \ ga('create', 'UA-2487671-6', 'auto');\n  ga('send', 'pageview');\n\n</script>\n
         \ </body>\n</html>\n"
     http_version: 
-  recorded_at: Sun, 02 Sep 2018 06:49:23 GMT
+  recorded_at: Tue, 04 Sep 2018 13:31:42 GMT
 recorded_with: VCR 4.0.0

@@ -35,4 +35,5 @@ Gem::Specification.new do |spec|
   spec.add_dependency "http", "~> 3.3"
   spec.add_dependency "oga", "~> 2.15"
   spec.add_dependency "simple_whatweb", "~> 0.2"
+  spec.add_dependency "thor", "~> 0.19"
 end

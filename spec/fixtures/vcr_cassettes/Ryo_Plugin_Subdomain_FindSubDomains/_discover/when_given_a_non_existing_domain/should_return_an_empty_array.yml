@@ -22,7 +22,7 @@ http_interactions:
       Server:
       - nginx/1.10.3 (Ubuntu)
       Date:
-      - Sun, 02 Sep 2018 06:49:03 GMT
+      - Tue, 04 Sep 2018 13:33:02 GMT
       Content-Type:
       - text/html; charset=UTF-8
       Transfer-Encoding:
@@ -32,9 +32,9 @@ http_interactions:
       Vary:
       - Accept-Encoding
       Set-Cookie:
-      - _csrf-frontend=845632cc130a39a2780fe06235d2c5742000e5e23146651bc700efd4f1922f04a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22%1B%5E%29%0Ep%3B%5D%29fi%B7k%D6U%A1%27%AF%8A%9BC%D5%81u%1A%AE%99%5B%12%5Ci%FE%A8%22%3B%7D;
+      - _csrf-frontend=8e4638d2c59d80cc78d5dd6adeb6eb79592b1345ab696385d8e5cfca789f66fea%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22R%81%C1%AD%E1%80%FB%2A%B6%B7%CF%26%7C%AB%E0%D6l%FB%CD%84%9C%F4U%05%89%91%90m%17%0B%FC%A0%22%3B%7D;
         path=/; HttpOnly
-      - advanced-frontend=la9ei9q00se9f9nckfu6pdju81; path=/; HttpOnly
+      - advanced-frontend=gre5h2bc9nedqiep327rrnv9a1; path=/; HttpOnly
       Expires:
       - Thu, 19 Nov 1981 08:52:00 GMT
       Cache-Control:
@@ -52,7 +52,7 @@ http_interactions:
         'UA-120806854-1');\n    </script> \n\n    <meta charset=\"UTF-8\">\n    <meta
         http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n    <meta name=\"viewport\"
         content=\"width=device-width, initial-scale=1\">\n    <meta name=\"csrf-param\"
-        content=\"_csrf-frontend\">\n    <meta name=\"csrf-token\" content=\"LD4eY2Z2NoDu1AEuKDg3_AkewviCxoeqV1DQbBbtL4Y3YDdtFk1rqYi9tkX-bZbbppRZu1dH8rD5yYt-SoTRLg==\">\n
+        content=\"_csrf-frontend\">\n    <meta name=\"csrf-token\" content=\"tNngkynnwnch8MXJ2gwtLIfotCFf2aGWDv00XshEozTmWCE-yGc5XZdHCu-mp8366xN5pcMt9JOHbKQz309flA==\">\n
         \   <title>Not Found (#404)</title>\n    <link rel=\"icon\" href=\"/favicon.ico\"
         type=\"image/x-icon\" />\n                <meta name=\"description\" content=\"Page
         error. The user may have sent the wrong request.\">\n<link href=\"/css/popper.css\"
@@ -686,5 +686,5 @@ http_interactions:
         integrity=\"sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl\"
         crossorigin=\"anonymous\"></script>\n</body>\n</html>\n\n"
     http_version: 
-  recorded_at: Sun, 02 Sep 2018 06:49:03 GMT
+  recorded_at: Tue, 04 Sep 2018 13:33:02 GMT
 recorded_with: VCR 4.0.0

@@ -10,9 +10,8 @@ RSpec.describe Ryo, :vcr do
   describe "#discover" do
     subject { Ryo }
     it "should return a Hash" do
-      results = subject.discover "http://#{host}:#{port}"
+      results = subject.discover("http://#{host}:#{port}", all: true)
       expect(results).to be_a(Hash)
-      p results
     end
   end
 end

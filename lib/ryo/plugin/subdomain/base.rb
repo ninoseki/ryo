@@ -4,9 +4,9 @@ module Ryo
   module Plugin
     module Subdomain
       class Base
-        attr_reader :domain
-        def initialize(domain)
-          @domain = Domain.new(domain)
+        attr_reader :fld
+        def initialize(fld)
+          @fld = fld
         end
 
         def endpoint
@@ -14,7 +14,7 @@ module Ryo
         end
 
         def fetch_body
-          res = Client.http.get("#{endpoint}/#{domain.fld}")
+          res = Client.http.get("#{endpoint}/#{fld}")
           res.body.to_s
         end
 
@@ -30,8 +30,8 @@ module Ryo
           parse
         end
 
-        def self.discover(domain)
-          new(domain).discover
+        def self.discover(fld)
+          new(fld).discover
         end
       end
     end
