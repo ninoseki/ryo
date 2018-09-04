@@ -8,12 +8,12 @@ Ryo is a yet another website recon tool powered by Ruby.
 
 *Note*: I'm working on this just because for fun and study purposes.
 
-## Concepts
+## Concept
 
 - JSON all the way.
   - No pretty output / report, just a JSON.
 
-## Features & TODO
+## Features & ToDo list
 
 - [x] Directory & File brute force
 - [x] Subdomain discovery
