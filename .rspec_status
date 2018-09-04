@@ -1,0 +1,13 @@
+example_id                                             | status | run_time        |
+------------------------------------------------------ | ------ | --------------- |
+./spec/domain_spec.rb[1:1:1]                           | passed | 0.03442 seconds |
+./spec/plugin/dir_spec.rb[1:1:1]                       | passed | 20.38 seconds   |
+./spec/plugin/subdomain/dnsdumpster_spec.rb[1:1:1:1]   | passed | 0.03349 seconds |
+./spec/plugin/subdomain/dnsdumpster_spec.rb[1:1:2:1]   | passed | 0.0305 seconds  |
+./spec/plugin/subdomain/findsubdomain_spec.rb[1:1:1:1] | passed | 0.97414 seconds |
+./spec/plugin/subdomain/findsubdomain_spec.rb[1:1:2:1] | passed | 0.01773 seconds |
+./spec/plugin/subdomain/subdomain_spec.rb[1:1:1:1]     | passed | 1.26 seconds    |
+./spec/plugin/subdomain/subdomain_spec.rb[1:1:2:1]     | passed | 0.03526 seconds |
+./spec/plugin/tech_spec.rb[1:1:1]                      | passed | 0.51958 seconds |
+./spec/ryo_spec.rb[1:1]                                | passed | 0.00095 seconds |
+./spec/ryo_spec.rb[1:2:1]                              | passed | 24.63 seconds   |
