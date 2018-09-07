@@ -36,7 +36,6 @@ $ gem install ryo
 ```sh
 $ ryo
 Commands:
-Commands:
   ryo all URL         # Run all discovery plugins against a given URL
   ryo dir URL         # Discover directories and files belong to a given URL
   ryo help [COMMAND]  # Describe available commands or one specific command
