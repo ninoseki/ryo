@@ -3,6 +3,8 @@
 require "uri"
 require "oga"
 
+require "ryo/error"
+
 require "ryo/client"
 require "ryo/target"
 require "ryo/plugin"
@@ -19,6 +21,7 @@ module Ryo
     h[:dir] = Plugin::Dir.discover(target.uri) if options[:dir] || options[:all]
     h[:subdomain] = Plugin::Subdomain.discover(target.fld) if options[:subdomain] || options[:all]
     h[:tech] = Plugin::Tech.discover(target.uri) if options[:tech] || options[:all]
+    h[:whois] = Plugin::Whois.discover(target.domain) if options[:whois] || options[:all]
     h
   end
 end

@@ -20,6 +20,12 @@ module Ryo
       puts hash.to_json
     end
 
+    desc "whois URL", "Discover whois information of a given URL"
+    def whois(url)
+      hash = discover(url, whois: true)
+      puts hash.to_json
+    end
+
     desc "all URL", "Run all discovery plugins against a given URL"
     def all(url)
       hash = discover(url, all: true)

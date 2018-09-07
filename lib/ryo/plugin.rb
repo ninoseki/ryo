@@ -3,3 +3,4 @@
 require_relative "./plugin/dir"
 require_relative "./plugin/subdomain"
 require_relative "./plugin/tech"
+require_relative "./plugin/whois"

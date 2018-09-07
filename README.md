@@ -20,8 +20,10 @@ Ryo is a yet another website recon tool powered by Ruby.
   - By using [DNSDumpster](https://dnsdumpster.com/) and [FindSubdomains](https://findsubdomains.com/)
 - [x] Website's technology detection
   - By using [SimpleWhatWeb](https://github.com/ninoseki/SimpleWhatWeb)
+- [x] Whois
+  - By using [DomainBigData](https://domainbigdata.com/)
+- [x] Threading support
 - [ ] Port scanning
-- [ ] Threading support
 
 ## Installation
 
@@ -34,15 +36,17 @@ $ gem install ryo
 ```sh
 $ ryo
 Commands:
+Commands:
   ryo all URL         # Run all discovery plugins against a given URL
   ryo dir URL         # Discover directories and files belong to a given URL
   ryo help [COMMAND]  # Describe available commands or one specific command
   ryo subdomain URL   # Discover subdomains of a given URL
   ryo tech URL        # Discover used technolgies of a given URL
+  ryo whois URL       # Discover whois information of a given URL
 ```
 
 ```sh
-# use Webrick as a local http server
+# start Webrick HTTP server
 # $ ruby -rwebrick -e 'WEBrick::HTTPServer.new(:DocumentRoot => "./", :Port => 8000).start'
 $ ryo all http://localhost:8000 | jq .
 {
@@ -111,6 +115,10 @@ $ ryo all http://localhost:8000 | jq .
         "certainty": 100
       }
     ]
+  },
+  "whois": {
+    "globa_stats": {},
+    "registrant": {}
   }
 }
 ```

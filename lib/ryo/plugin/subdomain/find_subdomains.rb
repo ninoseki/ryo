@@ -13,7 +13,7 @@ module Ryo
           return [] if table.nil?
           table.css("tr")[1..-1].map do |row|
             cols = row.css("td")
-            domain = cols.first.at_css("a").text.strip
+            domain = cols.first.at_css("a")&.text&.strip
             ip = cols[1].at_css("a").nil? ? "N/A" : cols[1].at_css("a").text.strip
             { domain: domain, ip: ip }
           end
