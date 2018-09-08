@@ -8,6 +8,12 @@ module Ryo
       puts hash.to_json
     end
 
+    desc "dns URL", "Discover DNS records of a given URL"
+    def dns(url)
+      hash = run_discovery(url, dns: true)
+      puts hash.to_json
+    end
+
     desc "subdomain URL", "Discover subdomains of a given URL"
     def subdomain(url)
       hash = run_discovery(url, subdomain: true)

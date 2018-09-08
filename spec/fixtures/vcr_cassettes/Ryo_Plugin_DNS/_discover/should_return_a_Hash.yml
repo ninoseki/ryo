@@ -1,0 +1,360 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://dns.google.com/resolve?name=https:/www.example.com/&type=A
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/51.0.2704.79 Safari/537.36 Edge/14.14393
+      Connection:
+      - close
+      Host:
+      - dns.google.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Date:
+      - Sat, 08 Sep 2018 01:46:36 GMT
+      Expires:
+      - Sat, 08 Sep 2018 01:46:36 GMT
+      Cache-Control:
+      - private, max-age=0
+      Content-Type:
+      - application/x-javascript; charset=UTF-8
+      Server:
+      - HTTP server (unknown)
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Frame-Options:
+      - SAMEORIGIN
+      Alt-Svc:
+      - quic=":443"; ma=2592000; v="44,43,39,35"
+      Accept-Ranges:
+      - none
+      Vary:
+      - Accept-Encoding
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"Status": 3,"TC": false,"RD": true,"RA": true,"AD": true,"CD": false,"Question":[
+        {"name": "https:/www.example.com/.","type": 1}],"Authority":[ {"name": ".","type":
+        6,"TTL": 86398,"data": "a.root-servers.net. nstld.verisign-grs.com. 2018090702
+        1800 900 604800 86400"}]}'
+    http_version: 
+  recorded_at: Sat, 08 Sep 2018 01:46:36 GMT
+- request:
+    method: get
+    uri: https://dns.google.com/resolve?name=https:/www.example.com/&type=AAAA
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/51.0.2704.79 Safari/537.36 Edge/14.14393
+      Connection:
+      - close
+      Host:
+      - dns.google.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Date:
+      - Sat, 08 Sep 2018 01:46:36 GMT
+      Expires:
+      - Sat, 08 Sep 2018 01:46:36 GMT
+      Cache-Control:
+      - private, max-age=0
+      Content-Type:
+      - application/x-javascript; charset=UTF-8
+      Server:
+      - HTTP server (unknown)
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Frame-Options:
+      - SAMEORIGIN
+      Alt-Svc:
+      - quic=":443"; ma=2592000; v="44,43,39,35"
+      Accept-Ranges:
+      - none
+      Vary:
+      - Accept-Encoding
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"Status": 3,"TC": false,"RD": true,"RA": true,"AD": true,"CD": false,"Question":[
+        {"name": "https:/www.example.com/.","type": 28}],"Authority":[ {"name": ".","type":
+        6,"TTL": 86398,"data": "a.root-servers.net. nstld.verisign-grs.com. 2018090702
+        1800 900 604800 86400"}]}'
+    http_version: 
+  recorded_at: Sat, 08 Sep 2018 01:46:36 GMT
+- request:
+    method: get
+    uri: https://dns.google.com/resolve?name=https:/www.example.com/&type=CNAME
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/51.0.2704.79 Safari/537.36 Edge/14.14393
+      Connection:
+      - close
+      Host:
+      - dns.google.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Date:
+      - Sat, 08 Sep 2018 01:46:36 GMT
+      Expires:
+      - Sat, 08 Sep 2018 01:46:36 GMT
+      Cache-Control:
+      - private, max-age=0
+      Content-Type:
+      - application/x-javascript; charset=UTF-8
+      Server:
+      - HTTP server (unknown)
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Frame-Options:
+      - SAMEORIGIN
+      Alt-Svc:
+      - quic=":443"; ma=2592000; v="44,43,39,35"
+      Accept-Ranges:
+      - none
+      Vary:
+      - Accept-Encoding
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"Status": 3,"TC": false,"RD": true,"RA": true,"AD": true,"CD": false,"Question":[
+        {"name": "https:/www.example.com/.","type": 5}],"Authority":[ {"name": ".","type":
+        6,"TTL": 86398,"data": "a.root-servers.net. nstld.verisign-grs.com. 2018090702
+        1800 900 604800 86400"}]}'
+    http_version: 
+  recorded_at: Sat, 08 Sep 2018 01:46:36 GMT
+- request:
+    method: get
+    uri: https://dns.google.com/resolve?name=https:/www.example.com/&type=MX
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/51.0.2704.79 Safari/537.36 Edge/14.14393
+      Connection:
+      - close
+      Host:
+      - dns.google.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Date:
+      - Sat, 08 Sep 2018 01:46:36 GMT
+      Expires:
+      - Sat, 08 Sep 2018 01:46:36 GMT
+      Cache-Control:
+      - private, max-age=0
+      Content-Type:
+      - application/x-javascript; charset=UTF-8
+      Server:
+      - HTTP server (unknown)
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Frame-Options:
+      - SAMEORIGIN
+      Alt-Svc:
+      - quic=":443"; ma=2592000; v="44,43,39,35"
+      Accept-Ranges:
+      - none
+      Vary:
+      - Accept-Encoding
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"Status": 3,"TC": false,"RD": true,"RA": true,"AD": true,"CD": false,"Question":[
+        {"name": "https:/www.example.com/.","type": 15}],"Authority":[ {"name": ".","type":
+        6,"TTL": 86398,"data": "a.root-servers.net. nstld.verisign-grs.com. 2018090702
+        1800 900 604800 86400"}]}'
+    http_version: 
+  recorded_at: Sat, 08 Sep 2018 01:46:37 GMT
+- request:
+    method: get
+    uri: https://dns.google.com/resolve?name=https:/www.example.com/&type=NS
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/51.0.2704.79 Safari/537.36 Edge/14.14393
+      Connection:
+      - close
+      Host:
+      - dns.google.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Date:
+      - Sat, 08 Sep 2018 01:46:37 GMT
+      Expires:
+      - Sat, 08 Sep 2018 01:46:37 GMT
+      Cache-Control:
+      - private, max-age=0
+      Content-Type:
+      - application/x-javascript; charset=UTF-8
+      Server:
+      - HTTP server (unknown)
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Frame-Options:
+      - SAMEORIGIN
+      Alt-Svc:
+      - quic=":443"; ma=2592000; v="44,43,39,35"
+      Accept-Ranges:
+      - none
+      Vary:
+      - Accept-Encoding
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"Status": 3,"TC": false,"RD": true,"RA": true,"AD": true,"CD": false,"Question":[
+        {"name": "https:/www.example.com/.","type": 2}],"Authority":[ {"name": ".","type":
+        6,"TTL": 86397,"data": "a.root-servers.net. nstld.verisign-grs.com. 2018090702
+        1800 900 604800 86400"}]}'
+    http_version: 
+  recorded_at: Sat, 08 Sep 2018 01:46:37 GMT
+- request:
+    method: get
+    uri: https://dns.google.com/resolve?name=https:/www.example.com/&type=SOA
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/51.0.2704.79 Safari/537.36 Edge/14.14393
+      Connection:
+      - close
+      Host:
+      - dns.google.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Date:
+      - Sat, 08 Sep 2018 01:46:37 GMT
+      Expires:
+      - Sat, 08 Sep 2018 01:46:37 GMT
+      Cache-Control:
+      - private, max-age=0
+      Content-Type:
+      - application/x-javascript; charset=UTF-8
+      Server:
+      - HTTP server (unknown)
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Frame-Options:
+      - SAMEORIGIN
+      Alt-Svc:
+      - quic=":443"; ma=2592000; v="44,43,39,35"
+      Accept-Ranges:
+      - none
+      Vary:
+      - Accept-Encoding
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"Status": 3,"TC": false,"RD": true,"RA": true,"AD": true,"CD": false,"Question":[
+        {"name": "https:/www.example.com/.","type": 6}],"Authority":[ {"name": ".","type":
+        6,"TTL": 86397,"data": "a.root-servers.net. nstld.verisign-grs.com. 2018090702
+        1800 900 604800 86400"}]}'
+    http_version: 
+  recorded_at: Sat, 08 Sep 2018 01:46:37 GMT
+- request:
+    method: get
+    uri: https://dns.google.com/resolve?name=https:/www.example.com/&type=TXT
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/51.0.2704.79 Safari/537.36 Edge/14.14393
+      Connection:
+      - close
+      Host:
+      - dns.google.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Date:
+      - Sat, 08 Sep 2018 01:46:37 GMT
+      Expires:
+      - Sat, 08 Sep 2018 01:46:37 GMT
+      Cache-Control:
+      - private, max-age=0
+      Content-Type:
+      - application/x-javascript; charset=UTF-8
+      Server:
+      - HTTP server (unknown)
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Frame-Options:
+      - SAMEORIGIN
+      Alt-Svc:
+      - quic=":443"; ma=2592000; v="44,43,39,35"
+      Accept-Ranges:
+      - none
+      Vary:
+      - Accept-Encoding
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"Status": 3,"TC": false,"RD": true,"RA": true,"AD": true,"CD": false,"Question":[
+        {"name": "https:/www.example.com/.","type": 16}],"Authority":[ {"name": ".","type":
+        6,"TTL": 86397,"data": "a.root-servers.net. nstld.verisign-grs.com. 2018090702
+        1800 900 604800 86400"}]}'
+    http_version: 
+  recorded_at: Sat, 08 Sep 2018 01:46:37 GMT
+recorded_with: VCR 4.0.0
