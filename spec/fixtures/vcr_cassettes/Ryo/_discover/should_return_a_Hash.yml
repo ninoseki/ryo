@@ -22,9 +22,9 @@ http_interactions:
       Strict-Transport-Security:
       - max-age=31536000; includeSubDomains; preload
       Date:
-      - Sat, 08 Sep 2018 01:57:01 GMT
+      - Sat, 08 Sep 2018 07:21:56 GMT
       Expires:
-      - Sat, 08 Sep 2018 01:57:01 GMT
+      - Sat, 08 Sep 2018 07:21:56 GMT
       Cache-Control:
       - private, max-age=0
       Content-Type:
@@ -47,10 +47,10 @@ http_interactions:
       encoding: UTF-8
       string: '{"Status": 3,"TC": false,"RD": true,"RA": true,"AD": true,"CD": false,"Question":[
         {"name": "0.0.0.0.","type": 1}],"Authority":[ {"name": ".","type": 6,"TTL":
-        56035,"data": "a.root-servers.net. nstld.verisign-grs.com. 2018090700 1800
+        36555,"data": "a.root-servers.net. nstld.verisign-grs.com. 2018090700 1800
         900 604800 86400"}]}'
     http_version: 
-  recorded_at: Sat, 08 Sep 2018 01:57:01 GMT
+  recorded_at: Sat, 08 Sep 2018 07:21:56 GMT
 - request:
     method: get
     uri: https://dns.google.com/resolve?name=0.0.0.0&type=AAAA
@@ -73,9 +73,9 @@ http_interactions:
       Strict-Transport-Security:
       - max-age=31536000; includeSubDomains; preload
       Date:
-      - Sat, 08 Sep 2018 01:57:01 GMT
+      - Sat, 08 Sep 2018 07:21:56 GMT
       Expires:
-      - Sat, 08 Sep 2018 01:57:01 GMT
+      - Sat, 08 Sep 2018 07:21:56 GMT
       Cache-Control:
       - private, max-age=0
       Content-Type:
@@ -98,10 +98,10 @@ http_interactions:
       encoding: UTF-8
       string: '{"Status": 3,"TC": false,"RD": true,"RA": true,"AD": true,"CD": false,"Question":[
         {"name": "0.0.0.0.","type": 28}],"Authority":[ {"name": ".","type": 6,"TTL":
-        31768,"data": "a.root-servers.net. nstld.verisign-grs.com. 2018090700 1800
+        15216,"data": "a.root-servers.net. nstld.verisign-grs.com. 2018090700 1800
         900 604800 86400"}]}'
     http_version: 
-  recorded_at: Sat, 08 Sep 2018 01:57:01 GMT
+  recorded_at: Sat, 08 Sep 2018 07:21:57 GMT
 - request:
     method: get
     uri: https://dns.google.com/resolve?name=0.0.0.0&type=CNAME
@@ -124,9 +124,9 @@ http_interactions:
       Strict-Transport-Security:
       - max-age=31536000; includeSubDomains; preload
       Date:
-      - Sat, 08 Sep 2018 01:57:01 GMT
+      - Sat, 08 Sep 2018 07:21:57 GMT
       Expires:
-      - Sat, 08 Sep 2018 01:57:01 GMT
+      - Sat, 08 Sep 2018 07:21:57 GMT
       Cache-Control:
       - private, max-age=0
       Content-Type:
@@ -149,10 +149,10 @@ http_interactions:
       encoding: UTF-8
       string: '{"Status": 3,"TC": false,"RD": true,"RA": true,"AD": true,"CD": false,"Question":[
         {"name": "0.0.0.0.","type": 5}],"Authority":[ {"name": ".","type": 6,"TTL":
-        86374,"data": "a.root-servers.net. nstld.verisign-grs.com. 2018090702 1800
+        86394,"data": "a.root-servers.net. nstld.verisign-grs.com. 2018090702 1800
         900 604800 86400"}]}'
     http_version: 
-  recorded_at: Sat, 08 Sep 2018 01:57:01 GMT
+  recorded_at: Sat, 08 Sep 2018 07:21:57 GMT
 - request:
     method: get
     uri: https://dns.google.com/resolve?name=0.0.0.0&type=MX
@@ -175,9 +175,9 @@ http_interactions:
       Strict-Transport-Security:
       - max-age=31536000; includeSubDomains; preload
       Date:
-      - Sat, 08 Sep 2018 01:57:01 GMT
+      - Sat, 08 Sep 2018 07:21:57 GMT
       Expires:
-      - Sat, 08 Sep 2018 01:57:01 GMT
+      - Sat, 08 Sep 2018 07:21:57 GMT
       Cache-Control:
       - private, max-age=0
       Content-Type:
@@ -200,10 +200,10 @@ http_interactions:
       encoding: UTF-8
       string: '{"Status": 3,"TC": false,"RD": true,"RA": true,"AD": true,"CD": false,"Question":[
         {"name": "0.0.0.0.","type": 15}],"Authority":[ {"name": ".","type": 6,"TTL":
-        86383,"data": "a.root-servers.net. nstld.verisign-grs.com. 2018090702 1800
+        86394,"data": "a.root-servers.net. nstld.verisign-grs.com. 2018090702 1800
         900 604800 86400"}]}'
     http_version: 
-  recorded_at: Sat, 08 Sep 2018 01:57:01 GMT
+  recorded_at: Sat, 08 Sep 2018 07:21:57 GMT
 - request:
     method: get
     uri: https://dns.google.com/resolve?name=0.0.0.0&type=NS
@@ -226,9 +226,9 @@ http_interactions:
       Strict-Transport-Security:
       - max-age=31536000; includeSubDomains; preload
       Date:
-      - Sat, 08 Sep 2018 01:57:01 GMT
+      - Sat, 08 Sep 2018 07:21:57 GMT
       Expires:
-      - Sat, 08 Sep 2018 01:57:01 GMT
+      - Sat, 08 Sep 2018 07:21:57 GMT
       Cache-Control:
       - private, max-age=0
       Content-Type:
@@ -251,10 +251,10 @@ http_interactions:
       encoding: UTF-8
       string: '{"Status": 3,"TC": false,"RD": true,"RA": true,"AD": true,"CD": false,"Question":[
         {"name": "0.0.0.0.","type": 2}],"Authority":[ {"name": ".","type": 6,"TTL":
-        86383,"data": "a.root-servers.net. nstld.verisign-grs.com. 2018090702 1800
+        86393,"data": "a.root-servers.net. nstld.verisign-grs.com. 2018090702 1800
         900 604800 86400"}]}'
     http_version: 
-  recorded_at: Sat, 08 Sep 2018 01:57:01 GMT
+  recorded_at: Sat, 08 Sep 2018 07:21:57 GMT
 - request:
     method: get
     uri: https://dns.google.com/resolve?name=0.0.0.0&type=SOA
@@ -277,9 +277,9 @@ http_interactions:
       Strict-Transport-Security:
       - max-age=31536000; includeSubDomains; preload
       Date:
-      - Sat, 08 Sep 2018 01:57:01 GMT
+      - Sat, 08 Sep 2018 07:21:57 GMT
       Expires:
-      - Sat, 08 Sep 2018 01:57:01 GMT
+      - Sat, 08 Sep 2018 07:21:57 GMT
       Cache-Control:
       - private, max-age=0
       Content-Type:
@@ -302,10 +302,10 @@ http_interactions:
       encoding: UTF-8
       string: '{"Status": 3,"TC": false,"RD": true,"RA": true,"AD": true,"CD": false,"Question":[
         {"name": "0.0.0.0.","type": 6}],"Authority":[ {"name": ".","type": 6,"TTL":
-        86383,"data": "a.root-servers.net. nstld.verisign-grs.com. 2018090702 1800
+        86386,"data": "a.root-servers.net. nstld.verisign-grs.com. 2018090702 1800
         900 604800 86400"}]}'
     http_version: 
-  recorded_at: Sat, 08 Sep 2018 01:57:01 GMT
+  recorded_at: Sat, 08 Sep 2018 07:21:57 GMT
 - request:
     method: get
     uri: https://dns.google.com/resolve?name=0.0.0.0&type=TXT
@@ -328,9 +328,9 @@ http_interactions:
       Strict-Transport-Security:
       - max-age=31536000; includeSubDomains; preload
       Date:
-      - Sat, 08 Sep 2018 01:57:01 GMT
+      - Sat, 08 Sep 2018 07:21:58 GMT
       Expires:
-      - Sat, 08 Sep 2018 01:57:01 GMT
+      - Sat, 08 Sep 2018 07:21:58 GMT
       Cache-Control:
       - private, max-age=0
       Content-Type:
@@ -353,10 +353,61 @@ http_interactions:
       encoding: UTF-8
       string: '{"Status": 3,"TC": false,"RD": true,"RA": true,"AD": true,"CD": false,"Question":[
         {"name": "0.0.0.0.","type": 16}],"Authority":[ {"name": ".","type": 6,"TTL":
-        86383,"data": "a.root-servers.net. nstld.verisign-grs.com. 2018090702 1800
+        86386,"data": "a.root-servers.net. nstld.verisign-grs.com. 2018090702 1800
         900 604800 86400"}]}'
     http_version: 
-  recorded_at: Sat, 08 Sep 2018 01:57:01 GMT
+  recorded_at: Sat, 08 Sep 2018 07:21:58 GMT
+- request:
+    method: get
+    uri: https://dns.google.com/resolve?name=0.0.0.0&type=A
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/51.0.2704.79 Safari/537.36 Edge/14.14393
+      Connection:
+      - close
+      Host:
+      - dns.google.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Date:
+      - Sat, 08 Sep 2018 07:21:58 GMT
+      Expires:
+      - Sat, 08 Sep 2018 07:21:58 GMT
+      Cache-Control:
+      - private, max-age=0
+      Content-Type:
+      - application/x-javascript; charset=UTF-8
+      Server:
+      - HTTP server (unknown)
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Frame-Options:
+      - SAMEORIGIN
+      Alt-Svc:
+      - quic=":443"; ma=2592000; v="44,43,39,35"
+      Accept-Ranges:
+      - none
+      Vary:
+      - Accept-Encoding
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"Status": 3,"TC": false,"RD": true,"RA": true,"AD": true,"CD": false,"Question":[
+        {"name": "0.0.0.0.","type": 1}],"Authority":[ {"name": ".","type": 6,"TTL":
+        36907,"data": "a.root-servers.net. nstld.verisign-grs.com. 2018090700 1800
+        900 604800 86400"}]}'
+    http_version: 
+  recorded_at: Sat, 08 Sep 2018 07:21:58 GMT
 - request:
     method: get
     uri: https://dnsdumpster.com/
@@ -379,7 +430,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Sat, 08 Sep 2018 01:57:02 GMT
+      - Sat, 08 Sep 2018 07:21:59 GMT
       Content-Type:
       - text/html; charset=utf-8
       Transfer-Encoding:
@@ -392,7 +443,7 @@ http_interactions:
       - ALLOW-FROM https://api.hackertarget.com/
       - SAMEORIGIN
       Set-Cookie:
-      - csrftoken=Gq6EG57i7970ZgH4KyuUWZdsDv12V74s; expires=Sat, 07-Sep-2019 01:57:02
+      - csrftoken=IEGihgnj8Ur7vwZtwGE7d1HhyRi3tpHn; expires=Sat, 07-Sep-2019 07:21:59
         GMT; Max-Age=31449600; Path=/
       Access-Control-Allow-Origin:
       - "*"
@@ -435,7 +486,7 @@ http_interactions:
         class=\"cover-heading\" style=\"margin-top: 100px;\">dns recon & research,
         find & lookup dns records</h1>\n<p class=\"lead\">\n<div id=\"hideform\">\n<form
         role=\"form\" action=\".\" method=\"post\"><input type='hidden' name='csrfmiddlewaretoken'
-        value='Gq6EG57i7970ZgH4KyuUWZdsDv12V74s' />\n  <div class=\"form-group\">\n<div
+        value='IEGihgnj8Ur7vwZtwGE7d1HhyRi3tpHn' />\n  <div class=\"form-group\">\n<div
         class=\"col-md-2\"></div><div class=\"col-md-6\">\n<input class=\"form-control\"
         type=\"text\" placeholder=\"exampledomain.com\" name=\"targetip\" id=\"regularInput\">\n</div></div>\n<div
         align=\"left\" id=\"formsubmit\"><button type=\"submit\" class=\"btn btn-default\">Search
@@ -576,13 +627,13 @@ http_interactions:
         \ ga('create', 'UA-2487671-6', 'auto');\n  ga('send', 'pageview');\n\n</script>\n
         \ </body>\n</html>\n"
     http_version: 
-  recorded_at: Sat, 08 Sep 2018 01:57:02 GMT
+  recorded_at: Sat, 08 Sep 2018 07:21:59 GMT
 - request:
     method: post
     uri: https://dnsdumpster.com/
     body:
       encoding: UTF-8
-      string: csrfmiddlewaretoken=Gq6EG57i7970ZgH4KyuUWZdsDv12V74s&targetip=0.0.0.0
+      string: csrfmiddlewaretoken=IEGihgnj8Ur7vwZtwGE7d1HhyRi3tpHn&targetip=0.0.0.0
     headers:
       User-Agent:
       - Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like
@@ -592,7 +643,7 @@ http_interactions:
       Connection:
       - close
       Cookie:
-      - csrftoken=Gq6EG57i7970ZgH4KyuUWZdsDv12V74s
+      - csrftoken=IEGihgnj8Ur7vwZtwGE7d1HhyRi3tpHn
       Content-Type:
       - application/x-www-form-urlencoded
       Host:
@@ -605,7 +656,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Sat, 08 Sep 2018 01:57:03 GMT
+      - Sat, 08 Sep 2018 07:22:00 GMT
       Content-Type:
       - text/html; charset=utf-8
       Transfer-Encoding:
@@ -618,7 +669,7 @@ http_interactions:
       - ALLOW-FROM https://api.hackertarget.com/
       - SAMEORIGIN
       Set-Cookie:
-      - csrftoken=Gq6EG57i7970ZgH4KyuUWZdsDv12V74s; expires=Sat, 07-Sep-2019 01:57:03
+      - csrftoken=IEGihgnj8Ur7vwZtwGE7d1HhyRi3tpHn; expires=Sat, 07-Sep-2019 07:22:00
         GMT; Max-Age=31449600; Path=/
       Access-Control-Allow-Origin:
       - "*"
@@ -661,7 +712,7 @@ http_interactions:
         class=\"cover-heading\" style=\"margin-top: 100px;\">dns recon & research,
         find & lookup dns records</h1>\n<p class=\"lead\">\n<div id=\"hideform\">\n<form
         role=\"form\" action=\".\" method=\"post\"><input type='hidden' name='csrfmiddlewaretoken'
-        value='Gq6EG57i7970ZgH4KyuUWZdsDv12V74s' />\n  <div class=\"form-group\">\n<div
+        value='IEGihgnj8Ur7vwZtwGE7d1HhyRi3tpHn' />\n  <div class=\"form-group\">\n<div
         class=\"col-md-2\"></div><div class=\"col-md-6\">\n<input class=\"form-control\"
         type=\"text\" placeholder=\"exampledomain.com\" name=\"targetip\" id=\"regularInput\">\n</div></div>\n<div
         align=\"left\" id=\"formsubmit\"><button type=\"submit\" class=\"btn btn-default\">Search
@@ -674,7 +725,7 @@ http_interactions:
         #00CC00; text-align: left; font-size: 1.6em; line-height: 2.7em;\">Showing
         results for <span style=\"font-weight: 700;\">0.0.0.0  (<form style=\"display:
         inline;\" role=\"form\" action=\".\" method=\"post\"><input type='hidden'
-        name='csrfmiddlewaretoken' value='Gq6EG57i7970ZgH4KyuUWZdsDv12V74s' /><input
+        name='csrfmiddlewaretoken' value='IEGihgnj8Ur7vwZtwGE7d1HhyRi3tpHn' /><input
         type=\"hidden\" value=\"0.0.0.0/\" name=\"targetip\"><button class=\"submit-with-icon\"
         type=\"submit\" data-toggle=\"tooltip\" data-placement=\"top\" title=\"Search
         Banners for Netblock (Passive)\"><span style=\"color: #ffffff; font-size:
@@ -829,7 +880,7 @@ http_interactions:
         \ ga('create', 'UA-2487671-6', 'auto');\n  ga('send', 'pageview');\n\n</script>\n
         \ </body>\n</html>\n"
     http_version: 
-  recorded_at: Sat, 08 Sep 2018 01:57:04 GMT
+  recorded_at: Sat, 08 Sep 2018 07:22:00 GMT
 - request:
     method: get
     uri: https://findsubdomains.com/subdomains-of/0.0.0.0
@@ -852,7 +903,7 @@ http_interactions:
       Server:
       - nginx/1.10.3 (Ubuntu)
       Date:
-      - Sat, 08 Sep 2018 01:57:05 GMT
+      - Sat, 08 Sep 2018 07:22:03 GMT
       Content-Type:
       - text/html; charset=UTF-8
       Transfer-Encoding:
@@ -862,9 +913,9 @@ http_interactions:
       Vary:
       - Accept-Encoding
       Set-Cookie:
-      - _csrf-frontend=b758311771dae3691c47973bb2390f211f4dc30e92d0d123514270df0c079282a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22%AEV%FA%0E%F6%91%2F%82%99%13%EC%9F%E4%B5%D3%05%C0x%98%19y%DB%C4%0B%03%3FW%BF%7D%D7%F4%3E%22%3B%7D;
+      - _csrf-frontend=9ccd0b71a9839bebb12350f668750f355fc66aa9ecf278d52aa0dce621198c4ea%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22a%FE%F3%15%C5%29%C5%D9%CB%EF%A8%EAF%D2%13%3B%97KBa%AB%FA-e%EA%FB%3E%B1iv%8E%17%22%3B%7D;
         path=/; HttpOnly
-      - advanced-frontend=b0ie8g2ces3r0ciu3igbe3ijj6; path=/; HttpOnly
+      - advanced-frontend=k5u3tmrgd2n97hgg02u6dcdnv6; path=/; HttpOnly
       Expires:
       - Thu, 19 Nov 1981 08:52:00 GMT
       Cache-Control:
@@ -882,7 +933,7 @@ http_interactions:
         'UA-120806854-1');\n    </script> \n\n    <meta charset=\"UTF-8\">\n    <meta
         http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n    <meta name=\"viewport\"
         content=\"width=device-width, initial-scale=1\">\n    <meta name=\"csrf-param\"
-        content=\"_csrf-frontend\">\n    <meta name=\"csrf-token\" content=\"H1-nrB5wNxt5GPV58wbgVrgt85kdhJxLdHdy-ZSp-muxCV2i6OEYmeALGeYXszNTeFVrgGRfWEB3SCVG6X4OVQ==\">\n
+        content=\"_csrf-frontend\">\n    <meta name=\"csrf-token\" content=\"GtBoavc741ZC7nkyxuj9rBgBBlZINCJYCQ7azv1ONXh7Lpt_MhImj4kB0diAOu6Xj0pEN-PODz3j9eR_lDi7bw==\">\n
         \   <title>Subdomains of 0.0.0.0 — FindSubDomains</title>\n    <link rel=\"icon\"
         href=\"/favicon.ico\" type=\"image/x-icon\" />\n    <link rel=\"canonical\"
         href=\"/subdomains-of/0.0.0.0\"/>            <meta name=\"title\" content=\"Find
@@ -1820,7 +1871,7 @@ http_interactions:
         integrity=\"sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl\"
         crossorigin=\"anonymous\"></script>\n</body>\n</html>\n\n"
     http_version: 
-  recorded_at: Sat, 08 Sep 2018 01:57:06 GMT
+  recorded_at: Sat, 08 Sep 2018 07:22:04 GMT
 - request:
     method: get
     uri: https://domainbigdata.com/0.0.0.0
@@ -1853,7 +1904,7 @@ http_interactions:
       X-Frame-Options:
       - DENY
       Date:
-      - Sat, 08 Sep 2018 01:57:10 GMT
+      - Sat, 08 Sep 2018 07:22:07 GMT
       Connection:
       - close
       Content-Length:
@@ -2032,5 +2083,5 @@ http_interactions:
         100);\r\n            showMapsIP(0, 0);\r\n            \r\n        });\r\n
         \      \r\n    </script>\r\n    \r\n   \r\n\r\n\r\n\r\n    </body>\r\n</html>\r\n"
     http_version: 
-  recorded_at: Sat, 08 Sep 2018 01:57:10 GMT
+  recorded_at: Sat, 08 Sep 2018 07:22:07 GMT
 recorded_with: VCR 4.0.0
