@@ -1,4 +1,7 @@
 require "bundler/setup"
+
+require "dotenv/load"
+
 require "ryo"
 
 require "glint"
@@ -75,4 +78,6 @@ VCR.configure do |config|
   config.configure_rspec_metadata!
   config.hook_into :webmock
   config.ignore_localhost = true
+
+  config.filter_sensitive_data("<API_KEY>") { ENV["SHODAN_API_KEY"] }
 end

@@ -25,6 +25,13 @@ module Ryo
       end
     end
 
+    def ip
+      @ip ||= String.new.tap do |out|
+        h = Plugin::DNS.new(domain).dig("A")
+        out << h.dig("Answer")&.first&.dig("data") || "N/A"
+      end
+    end
+
     private
 
     def tlds
