@@ -16,6 +16,8 @@ Ryo is a yet another website recon tool powered by Ruby.
 ## Features & ToDo list
 
 - [x] Directory & File brute force
+- [x] DNS dig
+  -  By using [Google Public DNS](https://developers.google.com/speed/public-dns/)
 - [x] Subdomain discovery
   - By using [DNSDumpster](https://dnsdumpster.com/) and [FindSubdomains](https://findsubdomains.com/)
 - [x] Website's technology detection
@@ -38,50 +40,217 @@ $ ryo
 Commands:
   ryo all URL         # Run all discovery plugins against a given URL
   ryo dir URL         # Discover directories and files belong to a given URL
+  ryo discover URL    # Run discovery plugin(s) against a given URL
+  ryo dns URL         # Discover DNS records of a given URL
   ryo help [COMMAND]  # Describe available commands or one specific command
   ryo subdomain URL   # Discover subdomains of a given URL
   ryo tech URL        # Discover used technolgies of a given URL
   ryo whois URL       # Discover whois information of a given URL
 ```
 
+**Example:**
+
 ```sh
 # start Webrick HTTP server
 # $ ruby -rwebrick -e 'WEBrick::HTTPServer.new(:DocumentRoot => "./", :Port => 8000).start'
 $ ryo all http://localhost:8000 | jq .
+```
+
+**Output:**
+
+```json
 {
   "dir": [
-    "http://localhost:8000/.git/",
-    "http://localhost:8000/.git/branches/",
     "http://localhost:8000/.git/COMMIT_EDITMSG",
     "http://localhost:8000/.git/config",
+    "http://localhost:8000/.git/branches/",
+    "http://localhost:8000/.git/HEAD",
     "http://localhost:8000/.git/description",
     "http://localhost:8000/.git/FETCH_HEAD",
-    "http://localhost:8000/.git/HEAD",
-    "http://localhost:8000/.git/hooks/",
     "http://localhost:8000/.git/index",
-    "http://localhost:8000/.git/info/",
     "http://localhost:8000/.git/info/exclude",
+    "http://localhost:8000/.git/",
     "http://localhost:8000/.git/logs/",
+    "http://localhost:8000/.git/info/",
     "http://localhost:8000/.git/logs/HEAD",
+    "http://localhost:8000/.git/hooks/",
     "http://localhost:8000/.git/logs/refs/heads/master",
     "http://localhost:8000/.git/logs/refs/remotes/origin/HEAD",
-    "http://localhost:8000/.git/objects/",
+    "http://localhost:8000/.git/logs/refs/remotes/origin/master",
     "http://localhost:8000/.git/packed-refs",
     "http://localhost:8000/.git/refs/",
     "http://localhost:8000/.git/refs/heads/master",
     "http://localhost:8000/.git/refs/remotes/origin/HEAD",
+    "http://localhost:8000/.git/refs/remotes/origin/master",
     "http://localhost:8000/.gitignore",
     "http://localhost:8000/.gitignore/",
+    "http://localhost:8000/.git/objects/",
     "http://localhost:8000/.travis.yml",
-    "http://localhost:8000/Bin/",
     "http://localhost:8000/bin/",
+    "http://localhost:8000/Bin/",
     "http://localhost:8000/Gemfile",
     "http://localhost:8000/Gemfile.lock",
     "http://localhost:8000/LICENSE",
     "http://localhost:8000/Rakefile",
-    "http://localhost:8000/README.md",
-    "http://localhost:8000/readme.md"
+    "http://localhost:8000/readme.md",
+    "http://localhost:8000/README.md"
   ],
+  "dns": {
+    "A": {
+      "Status": 3,
+      "TC": false,
+      "RD": true,
+      "RA": true,
+      "AD": true,
+      "CD": false,
+      "Question": [
+        {
+          "name": "localhost.",
+          "type": 1
+        }
+      ],
+      "Authority": [
+        {
+          "name": ".",
+          "type": 6,
+          "TTL": 34709,
+          "data": "a.root-servers.net. nstld.verisign-grs.com. 2018090700 1800 900 604800 86400"
+        }
+      ]
+    },
+    "AAAA": {
+      "Status": 3,
+      "TC": false,
+      "RD": true,
+      "RA": true,
+      "AD": true,
+      "CD": false,
+      "Question": [
+        {
+          "name": "localhost.",
+          "type": 28
+        }
+      ],
+      "Authority": [
+        {
+          "name": ".",
+          "type": 6,
+          "TTL": 27096,
+          "data": "a.root-servers.net. nstld.verisign-grs.com. 2018090700 1800 900 604800 86400"
+        }
+      ]
+    },
+    "CNAME": {
+      "Status": 3,
+      "TC": false,
+      "RD": true,
+      "RA": true,
+      "AD": true,
+      "CD": false,
+      "Question": [
+        {
+          "name": "localhost.",
+          "type": 5
+        }
+      ],
+      "Authority": [
+        {
+          "name": ".",
+          "type": 6,
+          "TTL": 44332,
+          "data": "a.root-servers.net. nstld.verisign-grs.com. 2018090700 1800 900 604800 86400"
+        }
+      ]
+    },
+    "MX": {
+      "Status": 3,
+      "TC": false,
+      "RD": true,
+      "RA": true,
+      "AD": true,
+      "CD": false,
+      "Question": [
+        {
+          "name": "localhost.",
+          "type": 15
+        }
+      ],
+      "Authority": [
+        {
+          "name": ".",
+          "type": 6,
+          "TTL": 86026,
+          "data": "a.root-servers.net. nstld.verisign-grs.com. 2018090702 1800 900 604800 86400"
+        }
+      ]
+    },
+    "NS": {
+      "Status": 3,
+      "TC": false,
+      "RD": true,
+      "RA": true,
+      "AD": true,
+      "CD": false,
+      "Question": [
+        {
+          "name": "localhost.",
+          "type": 2
+        }
+      ],
+      "Authority": [
+        {
+          "name": ".",
+          "type": 6,
+          "TTL": 12268,
+          "data": "a.root-servers.net. nstld.verisign-grs.com. 2018090601 1800 900 604800 86400"
+        }
+      ]
+    },
+    "SOA": {
+      "Status": 3,
+      "TC": false,
+      "RD": true,
+      "RA": true,
+      "AD": true,
+      "CD": false,
+      "Question": [
+        {
+          "name": "localhost.",
+          "type": 6
+        }
+      ],
+      "Authority": [
+        {
+          "name": ".",
+          "type": 6,
+          "TTL": 7174,
+          "data": "a.root-servers.net. nstld.verisign-grs.com. 2018090601 1800 900 604800 86400"
+        }
+      ]
+    },
+    "TXT": {
+      "Status": 3,
+      "TC": false,
+      "RD": true,
+      "RA": true,
+      "AD": true,
+      "CD": false,
+      "Question": [
+        {
+          "name": "localhost.",
+          "type": 16
+        }
+      ],
+      "Authority": [
+        {
+          "name": ".",
+          "type": 6,
+          "TTL": 36307,
+          "data": "a.root-servers.net. nstld.verisign-grs.com. 2018090601 1800 900 604800 86400"
+        }
+      ]
+    }
+  },
   "subdomain": [],
   "tech": {
     "HTTPServer": [

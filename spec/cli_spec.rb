@@ -64,6 +64,7 @@ RSpec.describe Ryo::CLI do
   describe "#all" do
     before {
       allow(Ryo::Plugin::Dir).to receive(:discover).and_return({})
+      allow(Ryo::Plugin::DNS).to receive(:discover).and_return({})
       allow(Ryo::Plugin::Subdomain).to receive(:discover).and_return({})
       allow(Ryo::Plugin::Tech).to receive(:discover).and_return({})
       allow(Ryo::Plugin::Whois).to receive(:discover).and_return({})
