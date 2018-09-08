@@ -12,6 +12,16 @@ RSpec.describe Ryo::CLI do
       expect(json).to be_a(Hash)
     end
   end
+  describe "#shodan" do
+    before {
+      allow(Ryo::Plugin::Shodan).to receive(:discover).and_return({})
+    }
+    it "should output a JSON" do
+      output = capture(:stdout) { subject.start %w(shodan http://localhost) }
+      json = JSON.parse(output)
+      expect(json).to be_a(Hash)
+    end
+  end
   describe "#subdomain" do
     before {
       allow(Ryo::Plugin::Subdomain).to receive(:discover).and_return({})
@@ -65,6 +75,7 @@ RSpec.describe Ryo::CLI do
     before {
       allow(Ryo::Plugin::Dir).to receive(:discover).and_return({})
       allow(Ryo::Plugin::DNS).to receive(:discover).and_return({})
+      allow(Ryo::Plugin::Shodan).to receive(:discover).and_return({})
       allow(Ryo::Plugin::Subdomain).to receive(:discover).and_return({})
       allow(Ryo::Plugin::Tech).to receive(:discover).and_return({})
       allow(Ryo::Plugin::Whois).to receive(:discover).and_return({})

@@ -14,6 +14,12 @@ module Ryo
       puts hash.to_json
     end
 
+    desc "shodan URL", "Discover Shodan information of a given URL"
+    def shodan(url)
+      hash = run_discovery(url, shodan: true)
+      puts hash.to_json
+    end
+
     desc "subdomain URL", "Discover subdomains of a given URL"
     def subdomain(url)
       hash = run_discovery(url, subdomain: true)
@@ -34,6 +40,7 @@ module Ryo
 
     desc "discover URL", "Run discovery plugin(s) against a given URL"
     method_option :dir, type: :boolean, default: false
+    method_option :shodan, type: :boolean, default: false
     method_option :subdomain, type: :boolean, default: false
     method_option :tech, type: :boolean, default: false
     method_option :whois, type: :boolean, default: false

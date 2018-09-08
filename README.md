@@ -18,6 +18,7 @@ Ryo is a yet another website recon tool powered by Ruby.
 - [x] Directory & File brute force
 - [x] DNS dig
   -  By using [Google Public DNS](https://developers.google.com/speed/public-dns/)
+- [x] Shodan search
 - [x] Subdomain discovery
   - By using [DNSDumpster](https://dnsdumpster.com/) and [FindSubdomains](https://findsubdomains.com/)
 - [x] Website's technology detection
@@ -43,10 +44,13 @@ Commands:
   ryo discover URL    # Run discovery plugin(s) against a given URL
   ryo dns URL         # Discover DNS records of a given URL
   ryo help [COMMAND]  # Describe available commands or one specific command
+  ryo shodan URL      # Discover Shodan information of a given URL
   ryo subdomain URL   # Discover subdomains of a given URL
   ryo tech URL        # Discover used technolgies of a given URL
   ryo whois URL       # Discover whois information of a given URL
 ```
+
+In order to use Shodan search, please set your Shodan API key as `SHODAN_API_KEY` environment variable.
 
 **Example:**
 

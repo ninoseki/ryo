@@ -1,0 +1,57 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.shodan.io/shodan/host/1.1.1.1?key=<API_KEY>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - unirest-ruby/1.0
+      Parameters:
+      - "{}"
+      Host:
+      - api.shodan.io
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Sat, 08 Sep 2018 06:13:01 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Frame-Options:
+      - DENY
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubDomains
+      X-Hacker:
+      - If you're reading this then you should check out careers.shodan.io :)
+      Content-Encoding:
+      - gzip
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        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
+    http_version: 
+  recorded_at: Sat, 08 Sep 2018 06:13:13 GMT
+recorded_with: VCR 4.0.0
