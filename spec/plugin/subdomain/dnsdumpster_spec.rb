@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 
 RSpec.describe Ryo::Plugin::Subdomain::DNSDumpster, :vcr do
   subject { Ryo::Plugin::Subdomain::DNSDumpster }

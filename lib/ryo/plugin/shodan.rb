@@ -16,11 +16,9 @@ module Ryo
       end
 
       def self.discover(ip)
-        begin
-          new.discover(ip)
-        rescue ArgumentError => e
-          { error: e.to_s }
-        end
+        new.discover(ip)
+      rescue ArgumentError => e
+        { error: e.to_s }
       end
     end
   end
