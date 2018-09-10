@@ -19,6 +19,8 @@ module Ryo
         new.discover(ip)
       rescue ArgumentError => e
         { error: e.to_s }
+      rescue StandardError => e
+        { error: e.to_s }
       end
     end
   end

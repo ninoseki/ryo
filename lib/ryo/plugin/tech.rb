@@ -12,6 +12,8 @@ module Ryo
         plugins.each do |name, plugin|
           result = plugin.execute(target)
           results[name] = result unless result.empty?
+        rescue StandardError => _
+          next
         end
         results
       end

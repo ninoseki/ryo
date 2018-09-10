@@ -11,6 +11,7 @@ module Ryo
         def parse
           table = doc.at_css("table#table-view")
           return [] if table.nil?
+
           table.css("tr")[1..-1].map do |row|
             cols = row.css("td")
             domain = cols.first.at_css("a")&.text&.strip
