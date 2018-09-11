@@ -20,11 +20,12 @@ module Ryo
         def parse
           tables = doc.css("table.table")
           return [] if tables.empty?
+
           table = tables.last
           table.css("tr").map do |row|
             cols = row.css("td")
             domain = cols.first.text.lines.first.chomp
-            ip = cols[1].text.lines.first.chomp
+            ip = cols[1].inner_text.chomp
             { domain: domain, ip: ip }
           end
         end
