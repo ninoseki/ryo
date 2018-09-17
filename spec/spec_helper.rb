@@ -1,15 +1,14 @@
 require "bundler/setup"
 
+require 'coveralls'
+Coveralls.wear!
+
 require "dotenv/load"
-
-require "ryo"
-
 require "glint"
 require "vcr"
 require "webrick"
 
-require 'coveralls'
-Coveralls.wear!
+require "ryo"
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure
