@@ -21,6 +21,8 @@ Ryo is a yet another website recon tool powered by Ruby.
 - [x] Shodan search
 - [x] Subdomain discovery
   - By using [DNSDumpster](https://dnsdumpster.com/) and [FindSubdomains](https://findsubdomains.com/)
+- [x] SSL certificate lookup
+  - By using [CertDB](https://certdb.com/)
 - [x] Website's technology detection
   - By using [SimpleWhatWeb](https://github.com/ninoseki/SimpleWhatWeb)
 - [x] Whois
@@ -40,6 +42,7 @@ $ gem install ryo
 $ ryo
 Commands:
   ryo all URL         # Run all discovery plugins against a given URL
+  ryo cert URL        # Discover an SSL certificate belongs to a given URL
   ryo dir URL         # Discover directories and files belong to a given URL
   ryo discover URL    # Run discovery plugin(s) against a given URL
   ryo dns URL         # Discover DNS records of a given URL
@@ -47,7 +50,6 @@ Commands:
   ryo shodan URL      # Discover Shodan information of a given URL
   ryo subdomain URL   # Discover subdomains of a given URL
   ryo tech URL        # Discover used technolgies of a given URL
-  ryo whois URL       # Discover whois information of a given URL
 ```
 
 In order to use Shodan search, please set your Shodan API key as `SHODAN_API_KEY` environment variable.
@@ -64,40 +66,45 @@ $ ryo all http://localhost:8000 | jq .
 
 ```json
 {
+  "cert": {
+    "error": "N/A"
+  },
   "dir": [
+    "http://localhost:8000/.DS_Store",
+    "http://localhost:8000/.env",
+    "http://localhost:8000/.git/FETCH_HEAD",
     "http://localhost:8000/.git/COMMIT_EDITMSG",
     "http://localhost:8000/.git/config",
-    "http://localhost:8000/.git/branches/",
     "http://localhost:8000/.git/HEAD",
-    "http://localhost:8000/.git/description",
-    "http://localhost:8000/.git/FETCH_HEAD",
+    "http://localhost:8000/.git/branches/",
     "http://localhost:8000/.git/index",
+    "http://localhost:8000/.git/description",
     "http://localhost:8000/.git/info/exclude",
     "http://localhost:8000/.git/",
-    "http://localhost:8000/.git/logs/",
     "http://localhost:8000/.git/info/",
     "http://localhost:8000/.git/logs/HEAD",
     "http://localhost:8000/.git/hooks/",
+    "http://localhost:8000/.git/logs/",
     "http://localhost:8000/.git/logs/refs/heads/master",
     "http://localhost:8000/.git/logs/refs/remotes/origin/HEAD",
-    "http://localhost:8000/.git/logs/refs/remotes/origin/master",
     "http://localhost:8000/.git/packed-refs",
-    "http://localhost:8000/.git/refs/",
+    "http://localhost:8000/.git/logs/refs/remotes/origin/master",
     "http://localhost:8000/.git/refs/heads/master",
+    "http://localhost:8000/.git/refs/",
     "http://localhost:8000/.git/refs/remotes/origin/HEAD",
     "http://localhost:8000/.git/refs/remotes/origin/master",
     "http://localhost:8000/.gitignore",
     "http://localhost:8000/.gitignore/",
     "http://localhost:8000/.git/objects/",
     "http://localhost:8000/.travis.yml",
-    "http://localhost:8000/bin/",
     "http://localhost:8000/Bin/",
     "http://localhost:8000/Gemfile",
     "http://localhost:8000/Gemfile.lock",
     "http://localhost:8000/LICENSE",
+    "http://localhost:8000/README.md",
     "http://localhost:8000/Rakefile",
-    "http://localhost:8000/readme.md",
-    "http://localhost:8000/README.md"
+    "http://localhost:8000/bin/",
+    "http://localhost:8000/readme.md"
   ],
   "dns": {
     "A": {
@@ -117,8 +124,8 @@ $ ryo all http://localhost:8000 | jq .
         {
           "name": ".",
           "type": 6,
-          "TTL": 34709,
-          "data": "a.root-servers.net. nstld.verisign-grs.com. 2018090700 1800 900 604800 86400"
+          "TTL": 85076,
+          "data": "a.root-servers.net. nstld.verisign-grs.com. 2018091601 1800 900 604800 86400"
         }
       ]
     },
@@ -139,8 +146,8 @@ $ ryo all http://localhost:8000 | jq .
         {
           "name": ".",
           "type": 6,
-          "TTL": 27096,
-          "data": "a.root-servers.net. nstld.verisign-grs.com. 2018090700 1800 900 604800 86400"
+          "TTL": 31568,
+          "data": "a.root-servers.net. nstld.verisign-grs.com. 2018091600 1800 900 604800 86400"
         }
       ]
     },
@@ -161,8 +168,8 @@ $ ryo all http://localhost:8000 | jq .
         {
           "name": ".",
           "type": 6,
-          "TTL": 44332,
-          "data": "a.root-servers.net. nstld.verisign-grs.com. 2018090700 1800 900 604800 86400"
+          "TTL": 10464,
+          "data": "a.root-servers.net. nstld.verisign-grs.com. 2018091501 1800 900 604800 86400"
         }
       ]
     },
@@ -183,8 +190,8 @@ $ ryo all http://localhost:8000 | jq .
         {
           "name": ".",
           "type": 6,
-          "TTL": 86026,
-          "data": "a.root-servers.net. nstld.verisign-grs.com. 2018090702 1800 900 604800 86400"
+          "TTL": 66679,
+          "data": "a.root-servers.net. nstld.verisign-grs.com. 2018091601 1800 900 604800 86400"
         }
       ]
     },
@@ -205,8 +212,8 @@ $ ryo all http://localhost:8000 | jq .
         {
           "name": ".",
           "type": 6,
-          "TTL": 12268,
-          "data": "a.root-servers.net. nstld.verisign-grs.com. 2018090601 1800 900 604800 86400"
+          "TTL": 44604,
+          "data": "a.root-servers.net. nstld.verisign-grs.com. 2018091600 1800 900 604800 86400"
         }
       ]
     },
@@ -227,8 +234,8 @@ $ ryo all http://localhost:8000 | jq .
         {
           "name": ".",
           "type": 6,
-          "TTL": 7174,
-          "data": "a.root-servers.net. nstld.verisign-grs.com. 2018090601 1800 900 604800 86400"
+          "TTL": 86397,
+          "data": "a.root-servers.net. nstld.verisign-grs.com. 2018091601 1800 900 604800 86400"
         }
       ]
     },
@@ -249,11 +256,14 @@ $ ryo all http://localhost:8000 | jq .
         {
           "name": ".",
           "type": 6,
-          "TTL": 36307,
-          "data": "a.root-servers.net. nstld.verisign-grs.com. 2018090601 1800 900 604800 86400"
+          "TTL": 86397,
+          "data": "a.root-servers.net. nstld.verisign-grs.com. 2018091601 1800 900 604800 86400"
         }
       ]
     }
+  },
+  "shodan": {
+    "error": "Invalid IP"
   },
   "subdomain": [],
   "tech": {
