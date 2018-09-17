@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+require_relative "./plugin/cert"
 require_relative "./plugin/dir"
 require_relative "./plugin/dns"
 require_relative "./plugin/shodan"

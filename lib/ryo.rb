@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
-require "uri"
 require "oga"
+require "uri"
 
 require "ryo/error"
 
@@ -18,6 +18,7 @@ module Ryo
     target = Target.new(uri)
 
     h = {}
+    h[:cert] = Plugin::Cert.discover(target.domain) if options[:cert] || options[:all]
     h[:dir] = Plugin::Dir.discover(target.uri) if options[:dir] || options[:all]
     h[:dns] = Plugin::DNS.discover(target.domain) if options[:dns] || options[:all]
     h[:shodan] = Plugin::Shodan.discover(target.ip) if options[:shodan] || options[:all]
