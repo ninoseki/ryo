@@ -3,7 +3,7 @@
 RSpec.describe Ryo::Plugin::Dir do
   include_context "http_server"
 
-  describe "#discover" do
+  describe ".discover" do
     subject { Ryo::Plugin::Dir }
     it "should return an Array" do
       results = subject.discover "http://#{host}:#{port}"

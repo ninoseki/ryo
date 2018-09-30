@@ -2,7 +2,7 @@
 
 RSpec.describe Ryo::Plugin::Subdomain, :vcr do
   subject { Ryo::Plugin::Subdomain }
-  describe "#discover" do
+  describe ".discover" do
     context "when given an existing domain" do
       it "should return a list of subdomains of a given domain" do
         subdomains = subject.discover("test.com")

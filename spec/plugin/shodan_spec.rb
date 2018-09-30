@@ -2,7 +2,7 @@
 
 RSpec.describe Ryo::Plugin::Shodan, :vcr do
   subject { Ryo::Plugin::Shodan }
-  describe "#discover" do
+  describe ".discover" do
     context "when given a valid API KEY" do
       it "should return a Hash" do
         results = subject.discover "1.1.1.1"
