@@ -1,0 +1,155 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://urlscan.io/api/v1/search?q=%22http://neverssl.com%22
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/51.0.2704.79 Safari/537.36 Edge/14.14393
+      Connection:
+      - close
+      Host:
+      - urlscan.io
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 11 Oct 2018 09:09:06 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '3127'
+      Connection:
+      - close
+      Cache-Control:
+      - public, max-age=10
+      Etag:
+      - W/"c37-rODWcNY2nUDb+1CopQuKQWt9X0A"
+      X-Proxy-Cache:
+      - MISS
+      Content-Security-Policy:
+      - 'default-src ''self'' data: www.google-analytics.com ; script-src ''self''
+        data: www.google-analytics.com maps.googleapis.com developers.google.com www.google.com
+        www.gstatic.com; style-src ''self'' ''unsafe-inline'' fonts.googleapis.com
+        www.google.com; img-src *; font-src ''self'' fonts.gstatic.com; child-src
+        ''self''; frame-src https://www.google.com/recaptcha/; form-action ''self'';
+        upgrade-insecure-requests; report-uri https://492e9283a087a343fe461d889f3a068e.report-uri.io/r/default/csp/enforce'
+      Referrer-Policy:
+      - unsafe-url
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubdomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - DENY
+      X-Xss-Protection:
+      - 1; mode=block
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "results": [
+            {
+              "task": {
+                "visibility": "public",
+                "method": "manual",
+                "time": "2018-07-10T19:43:28.658Z",
+                "source": "web",
+                "url": "https://urldefense.proofpoint.com/v2/url?u=https-3A__bit.ly_2jAKayc&d=DwMBaQ&c=-7HNwxqfpkdcRXCW8HB54Q&r=ED1uWZgu1FWxrF-i0hAtdU2sLv9pHOEKdzsXmyrEQXs&m=8bYT2mi51cVVzOmLkPlZNYtVHVPAoSqofY6xr2gZmqY&s=69zs5pbwBngQxy2yyttlGZVMk8nlRiabAMnSin9xxZI&e="
+              },
+              "stats": {
+                "uniqIPs": 1,
+                "consoleMsgs": 0,
+                "dataLength": 2536,
+                "encodedDataLength": 1617,
+                "requests": 1
+              },
+              "page": {
+                "country": "US",
+                "server": "AmazonS3",
+                "city": "Seattle",
+                "domain": "neverssl.com",
+                "ip": "13.32.158.195",
+                "asnname": "AMAZON-02 - Amazon.com, Inc., US",
+                "asn": "AS16509",
+                "url": "http://neverssl.com/",
+                "ptr": "server-13-32-158-195.fra56.r.cloudfront.net"
+              },
+              "uniq_countries": 1,
+              "_id": "c059aac3-e317-4407-9d01-99756e8e5049",
+              "result": "https://urlscan.io/api/v1/result/c059aac3-e317-4407-9d01-99756e8e5049"
+            },
+            {
+              "task": {
+                "visibility": "public",
+                "method": "manual",
+                "time": "2018-07-10T19:36:41.824Z",
+                "source": "web",
+                "url": "https://urldefense.proofpoint.com/v2/url?u=https-3A__bit.ly_2jAKayc&d=DwMBaQ&c=-7HNwxqfpkdcRXCW8HB54Q&r=ED1uWZgu1FWxrF-i0hAtdU2sLv9pHOEKdzsXmyrEQXs&m=8bYT2mi51cVVzOmLkPlZNYtVHVPAoSqofY6xr2gZmqY&s=69zs5pbwBngQxy2yyttlGZVMk8nlRiabAMnSin9xxZI&e="
+              },
+              "stats": {
+                "uniqIPs": 1,
+                "consoleMsgs": 0,
+                "dataLength": 2536,
+                "encodedDataLength": 1617,
+                "requests": 1
+              },
+              "page": {
+                "country": "US",
+                "server": "AmazonS3",
+                "city": "Seattle",
+                "domain": "neverssl.com",
+                "ip": "13.32.158.159",
+                "asnname": "AMAZON-02 - Amazon.com, Inc., US",
+                "asn": "AS16509",
+                "url": "http://neverssl.com/",
+                "ptr": "server-13-32-158-159.fra56.r.cloudfront.net"
+              },
+              "uniq_countries": 1,
+              "_id": "131190d1-2a4f-46a1-b7f8-567481b56d2d",
+              "result": "https://urlscan.io/api/v1/result/131190d1-2a4f-46a1-b7f8-567481b56d2d"
+            },
+            {
+              "task": {
+                "visibility": "public",
+                "method": "manual",
+                "time": "2018-02-07T06:22:22.824Z",
+                "source": "web",
+                "url": "http://neverssl.com/"
+              },
+              "stats": {
+                "uniqIPs": 1,
+                "consoleMsgs": 0,
+                "dataLength": 2536,
+                "encodedDataLength": 2935,
+                "requests": 1
+              },
+              "page": {
+                "country": "US",
+                "server": "AmazonS3",
+                "city": "Boardman",
+                "domain": "neverssl.com",
+                "ip": "52.218.208.171",
+                "asnname": "AMAZON-02 - Amazon.com, Inc., US",
+                "asn": "AS16509",
+                "url": "http://neverssl.com/",
+                "ptr": "s3-website-us-west-2.amazonaws.com"
+              },
+              "uniq_countries": 1,
+              "_id": "c157e756-9c0d-445f-95d6-c4ad65565321",
+              "result": "https://urlscan.io/api/v1/result/c157e756-9c0d-445f-95d6-c4ad65565321"
+            }
+          ],
+          "total": 3
+        }
+    http_version: 
+  recorded_at: Thu, 11 Oct 2018 09:09:04 GMT
+recorded_with: VCR 4.0.0

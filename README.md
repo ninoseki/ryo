@@ -27,6 +27,8 @@ Ryo is a yet another website recon tool powered by Ruby.
   - By using [SimpleWhatWeb](https://github.com/ninoseki/SimpleWhatWeb)
 - [x] Whois
   - By using [DomainBigData](https://domainbigdata.com/)
+- [x] Website history
+  - By using [urlscan.io](https://urlscan.io)
 - [x] Threading support
 - [ ] Port scanning
 
@@ -50,6 +52,8 @@ Commands:
   ryo shodan URL      # Discover Shodan information of a given URL
   ryo subdomain URL   # Discover subdomains of a given URL
   ryo tech URL        # Discover used technolgies of a given URL
+  ryo urlscan URL     # Discover urlscan.io scan results of a given URL
+  ryo whois URL       # Discover whois information of a given URL
 ```
 
 In order to use Shodan search, please set your Shodan API key as `SHODAN_API_KEY` environment variable.
@@ -69,43 +73,7 @@ $ ryo all http://localhost:8000 | jq .
   "cert": {
     "error": "N/A"
   },
-  "dir": [
-    "http://localhost:8000/.DS_Store",
-    "http://localhost:8000/.env",
-    "http://localhost:8000/.git/FETCH_HEAD",
-    "http://localhost:8000/.git/COMMIT_EDITMSG",
-    "http://localhost:8000/.git/config",
-    "http://localhost:8000/.git/HEAD",
-    "http://localhost:8000/.git/branches/",
-    "http://localhost:8000/.git/index",
-    "http://localhost:8000/.git/description",
-    "http://localhost:8000/.git/info/exclude",
-    "http://localhost:8000/.git/",
-    "http://localhost:8000/.git/info/",
-    "http://localhost:8000/.git/logs/HEAD",
-    "http://localhost:8000/.git/hooks/",
-    "http://localhost:8000/.git/logs/",
-    "http://localhost:8000/.git/logs/refs/heads/master",
-    "http://localhost:8000/.git/logs/refs/remotes/origin/HEAD",
-    "http://localhost:8000/.git/packed-refs",
-    "http://localhost:8000/.git/logs/refs/remotes/origin/master",
-    "http://localhost:8000/.git/refs/heads/master",
-    "http://localhost:8000/.git/refs/",
-    "http://localhost:8000/.git/refs/remotes/origin/HEAD",
-    "http://localhost:8000/.git/refs/remotes/origin/master",
-    "http://localhost:8000/.gitignore",
-    "http://localhost:8000/.gitignore/",
-    "http://localhost:8000/.git/objects/",
-    "http://localhost:8000/.travis.yml",
-    "http://localhost:8000/Bin/",
-    "http://localhost:8000/Gemfile",
-    "http://localhost:8000/Gemfile.lock",
-    "http://localhost:8000/LICENSE",
-    "http://localhost:8000/README.md",
-    "http://localhost:8000/Rakefile",
-    "http://localhost:8000/bin/",
-    "http://localhost:8000/readme.md"
-  ],
+  "dir": [],
   "dns": {
     "A": {
       "Status": 3,
@@ -116,7 +84,7 @@ $ ryo all http://localhost:8000 | jq .
       "CD": false,
       "Question": [
         {
-          "name": "localhost.",
+          "name": "127.0.0.1.",
           "type": 1
         }
       ],
@@ -124,8 +92,8 @@ $ ryo all http://localhost:8000 | jq .
         {
           "name": ".",
           "type": 6,
-          "TTL": 85076,
-          "data": "a.root-servers.net. nstld.verisign-grs.com. 2018091601 1800 900 604800 86400"
+          "TTL": 48909,
+          "data": "a.root-servers.net. nstld.verisign-grs.com. 2018101001 1800 900 604800 86400"
         }
       ]
     },
@@ -138,7 +106,7 @@ $ ryo all http://localhost:8000 | jq .
       "CD": false,
       "Question": [
         {
-          "name": "localhost.",
+          "name": "127.0.0.1.",
           "type": 28
         }
       ],
@@ -146,8 +114,8 @@ $ ryo all http://localhost:8000 | jq .
         {
           "name": ".",
           "type": 6,
-          "TTL": 31568,
-          "data": "a.root-servers.net. nstld.verisign-grs.com. 2018091600 1800 900 604800 86400"
+          "TTL": 53205,
+          "data": "a.root-servers.net. nstld.verisign-grs.com. 2018101001 1800 900 604800 86400"
         }
       ]
     },
@@ -160,7 +128,7 @@ $ ryo all http://localhost:8000 | jq .
       "CD": false,
       "Question": [
         {
-          "name": "localhost.",
+          "name": "127.0.0.1.",
           "type": 5
         }
       ],
@@ -168,8 +136,8 @@ $ ryo all http://localhost:8000 | jq .
         {
           "name": ".",
           "type": 6,
-          "TTL": 10464,
-          "data": "a.root-servers.net. nstld.verisign-grs.com. 2018091501 1800 900 604800 86400"
+          "TTL": 86391,
+          "data": "a.root-servers.net. nstld.verisign-grs.com. 2018101101 1800 900 604800 86400"
         }
       ]
     },
@@ -182,7 +150,7 @@ $ ryo all http://localhost:8000 | jq .
       "CD": false,
       "Question": [
         {
-          "name": "localhost.",
+          "name": "127.0.0.1.",
           "type": 15
         }
       ],
@@ -190,8 +158,8 @@ $ ryo all http://localhost:8000 | jq .
         {
           "name": ".",
           "type": 6,
-          "TTL": 66679,
-          "data": "a.root-servers.net. nstld.verisign-grs.com. 2018091601 1800 900 604800 86400"
+          "TTL": 86398,
+          "data": "a.root-servers.net. nstld.verisign-grs.com. 2018101101 1800 900 604800 86400"
         }
       ]
     },
@@ -204,7 +172,7 @@ $ ryo all http://localhost:8000 | jq .
       "CD": false,
       "Question": [
         {
-          "name": "localhost.",
+          "name": "127.0.0.1.",
           "type": 2
         }
       ],
@@ -212,8 +180,8 @@ $ ryo all http://localhost:8000 | jq .
         {
           "name": ".",
           "type": 6,
-          "TTL": 44604,
-          "data": "a.root-servers.net. nstld.verisign-grs.com. 2018091600 1800 900 604800 86400"
+          "TTL": 47564,
+          "data": "a.root-servers.net. nstld.verisign-grs.com. 2018101001 1800 900 604800 86400"
         }
       ]
     },
@@ -226,7 +194,7 @@ $ ryo all http://localhost:8000 | jq .
       "CD": false,
       "Question": [
         {
-          "name": "localhost.",
+          "name": "127.0.0.1.",
           "type": 6
         }
       ],
@@ -234,8 +202,8 @@ $ ryo all http://localhost:8000 | jq .
         {
           "name": ".",
           "type": 6,
-          "TTL": 86397,
-          "data": "a.root-servers.net. nstld.verisign-grs.com. 2018091601 1800 900 604800 86400"
+          "TTL": 63738,
+          "data": "a.root-servers.net. nstld.verisign-grs.com. 2018101100 1800 900 604800 86400"
         }
       ]
     },
@@ -248,7 +216,7 @@ $ ryo all http://localhost:8000 | jq .
       "CD": false,
       "Question": [
         {
-          "name": "localhost.",
+          "name": "127.0.0.1.",
           "type": 16
         }
       ],
@@ -256,8 +224,8 @@ $ ryo all http://localhost:8000 | jq .
         {
           "name": ".",
           "type": 6,
-          "TTL": 86397,
-          "data": "a.root-servers.net. nstld.verisign-grs.com. 2018091601 1800 900 604800 86400"
+          "TTL": 86398,
+          "data": "a.root-servers.net. nstld.verisign-grs.com. 2018101101 1800 900 604800 86400"
         }
       ]
     }
@@ -265,7 +233,24 @@ $ ryo all http://localhost:8000 | jq .
   "shodan": {
     "error": "Invalid IP"
   },
-  "subdomain": [],
+  "subdomain": [
+    {
+      "domain": "127.0.0.1",
+      "ip": "N/A"
+    },
+    {
+      "domain": "develop.127.0.0.1",
+      "ip": "N/A"
+    },
+    {
+      "domain": "loja01.127.0.0.1",
+      "ip": "N/A"
+    },
+    {
+      "domain": "www.127.0.0.1",
+      "ip": "N/A"
+    }
+  ],
   "tech": {
     "HTTPServer": [
       {
@@ -297,6 +282,41 @@ $ ryo all http://localhost:8000 | jq .
         "certainty": 100
       }
     ]
+  },
+  "urlscan": {
+    "results": [
+      {
+        "task": {
+          "visibility": "public",
+          "method": "api",
+          "time": "2018-09-12T19:15:09.391Z",
+          "source": "api",
+          "url": "http://price-wise.net"
+        },
+        "stats": {
+          "uniqIPs": 6,
+          "consoleMsgs": 0,
+          "dataLength": 401944,
+          "encodedDataLength": 155968,
+          "requests": 8
+        },
+        "page": {
+          "country": "US",
+          "server": "nginx/1.10.2",
+          "city": "Dallas",
+          "domain": "price-wise.net",
+          "ip": "159.65.190.189",
+          "asnname": "DIGITALOCEAN-ASN - DigitalOcean, LLC, US",
+          "asn": "AS14061",
+          "url": "http://price-wise.net/",
+          "ptr": ""
+        },
+        "uniq_countries": 1,
+        "_id": "120e5b5d-4d3e-4c63-ba0f-cf3e5ceb4219",
+        "result": "https://urlscan.io/api/v1/result/120e5b5d-4d3e-4c63-ba0f-cf3e5ceb4219"
+      }
+    ],
+    "total": 1
   },
   "whois": {
     "globa_stats": {},

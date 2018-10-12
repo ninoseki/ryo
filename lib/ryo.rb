@@ -24,6 +24,7 @@ module Ryo
     h[:shodan] = Plugin::Shodan.discover(target.ip) if options[:shodan] || options[:all]
     h[:subdomain] = Plugin::Subdomain.discover(target.fld) if options[:subdomain] || options[:all]
     h[:tech] = Plugin::Tech.discover(target.uri) if options[:tech] || options[:all]
+    h[:urlscan] = Plugin::URLscan.discover(target.uri) if options[:urlscan] || options[:all]
     h[:whois] = Plugin::Whois.discover(target.domain) if options[:whois] || options[:all]
     h
   end
