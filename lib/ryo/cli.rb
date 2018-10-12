@@ -44,12 +44,19 @@ module Ryo
       puts hash.to_json
     end
 
+    desc "urlscan URL", "Discover urlscan.io scan results of a given URL"
+    def urlscan(url)
+      hash = run_discovery(url, urlscan: true)
+      puts hash.to_json
+    end
+
     desc "discover URL", "Run discovery plugin(s) against a given URL"
     method_option :cert, type: :boolean, default: false
     method_option :dir, type: :boolean, default: false
     method_option :shodan, type: :boolean, default: false
     method_option :subdomain, type: :boolean, default: false
     method_option :tech, type: :boolean, default: false
+    method_option :urlscan, type: :boolean, default: false
     method_option :whois, type: :boolean, default: false
     def discovery(url)
       hash = run_discovery(url, options)

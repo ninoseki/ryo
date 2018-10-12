@@ -52,6 +52,16 @@ RSpec.describe Ryo::CLI do
       expect(json).to be_a(Hash)
     end
   end
+  describe "#urlscan" do
+    before {
+      allow(Ryo::Plugin::URLscan).to receive(:discover).and_return({})
+    }
+    it "should output a JSON" do
+      output = capture(:stdout) { subject.start %w(urlscan http://localhost) }
+      json = JSON.parse(output)
+      expect(json).to be_a(Hash)
+    end
+  end
   describe "#discover" do
     context "when given an empty options" do
       it "should return a JSON with an error message" do
