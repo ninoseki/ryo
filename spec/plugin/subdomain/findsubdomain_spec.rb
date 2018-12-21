@@ -7,7 +7,7 @@ RSpec.describe Ryo::Plugin::Subdomain::FindSubDomains, :vcr do
       it "should return a list of subdomains of a given domain" do
         subdomains = subject.discover("test.com")
         expect(subdomains).to be_an(Array)
-        test = subdomains.find { |subdomain| subdomain[:domain] == "test.com" }
+        test = subdomains.find { |subdomain| subdomain[:domain] == "www.test.com" }
         expect(test[:ip]).to eq("69.172.200.235")
       end
     end
